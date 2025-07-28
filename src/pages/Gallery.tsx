@@ -40,9 +40,24 @@ const Gallery = () => {
   return (
     <Layout>
       <div className="min-h-screen bg-background">
-        <section className="py-20 bg-gradient-primary text-white">
-          <div className="container-custom">
+        <section className="relative py-24 text-white overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="/src/assets/hero-campus.jpg"
+              alt="Gallery"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80"></div>
+          </div>
+
+          <div className="container-custom relative z-10">
             <div className="max-w-4xl mx-auto text-center">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                  <Camera className="w-8 h-8 text-white" />
+                </div>
+              </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">Gallery</h1>
               <p className="text-xl md:text-2xl text-white/90">
                 Explore our campus, facilities, and student life through images

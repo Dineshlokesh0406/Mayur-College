@@ -49,7 +49,6 @@ const Header = () => {
     academics: [
       { name: 'D.Pharm', href: '/dpharm', icon: GraduationCap },
       { name: 'B.Pharm', href: '/bpharm', icon: GraduationCap },
-      { name: 'Affiliations', href: '/affiliations', icon: Award },
     ],
     facilities: [
       { name: 'Laboratory', href: '/laboratory', icon: Building2 },
@@ -262,6 +261,24 @@ const Header = () => {
                   </a>
                   <a href="/bpharm" className="p-3 bg-card rounded-lg hover:bg-muted transition-colors">
                     <span className="text-sm font-medium">B.Pharm</span>
+                  </a>
+                  <a href="/laboratory" className="p-3 bg-card rounded-lg hover:bg-muted transition-colors">
+                    <span className="text-sm font-medium">Laboratory</span>
+                  </a>
+                  <a href="/library" className="p-3 bg-card rounded-lg hover:bg-muted transition-colors">
+                    <span className="text-sm font-medium">Library</span>
+                  </a>
+                  <a href="/sports" className="p-3 bg-card rounded-lg hover:bg-muted transition-colors">
+                    <span className="text-sm font-medium">Sports</span>
+                  </a>
+                  <a href="/co-curricular" className="p-3 bg-card rounded-lg hover:bg-muted transition-colors">
+                    <span className="text-sm font-medium">Activities</span>
+                  </a>
+                  <a href="/achievements" className="p-3 bg-card rounded-lg hover:bg-muted transition-colors">
+                    <span className="text-sm font-medium">Achievements</span>
+                  </a>
+                  <a href="/alumni" className="p-3 bg-card rounded-lg hover:bg-muted transition-colors">
+                    <span className="text-sm font-medium">Alumni</span>
                   </a>
                   <a href="/placements" className="p-3 bg-card rounded-lg hover:bg-muted transition-colors">
                     <span className="text-sm font-medium">Placements</span>

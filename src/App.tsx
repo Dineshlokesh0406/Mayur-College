@@ -13,6 +13,13 @@ import BPharm from "./pages/BPharm";
 import Affiliations from "./pages/Affiliations";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Laboratory from "./pages/Laboratory";
+import Sports from "./pages/Sports";
+import Library from "./pages/Library";
+import CoCurricular from "./pages/CoCurricular";
+import Achievements from "./pages/Achievements";
+import Alumni from "./pages/Alumni";
+import Placements from "./pages/Placements";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,6 +44,13 @@ const App = () => (
             <Route path="/dpharm" element={<DPharm />} />
             <Route path="/bpharm" element={<BPharm />} />
             <Route path="/affiliations" element={<Affiliations />} />
+            <Route path="/laboratory" element={<Laboratory />} />
+            <Route path="/sports" element={<Sports />} />
+            <Route path="/library" element={<Library />} />
+            <Route path="/co-curricular" element={<CoCurricular />} />
+            <Route path="/achievements" element={<Achievements />} />
+            <Route path="/alumni" element={<Alumni />} />
+            <Route path="/placements" element={<Placements />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

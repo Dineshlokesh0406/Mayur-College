@@ -10,9 +10,24 @@ const Contact = () => {
     <Layout>
       <div className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-primary text-white">
-          <div className="container-custom">
+        <section className="relative py-24 text-white overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="/src/assets/Main.jpg"
+              alt="Contact Us"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80"></div>
+          </div>
+
+          <div className="container-custom relative z-10">
             <div className="max-w-4xl mx-auto text-center">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                  <Mail className="w-8 h-8 text-white" />
+                </div>
+              </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
               <p className="text-xl md:text-2xl text-white/90">
                 Get in touch with us for admissions, inquiries, and more information
@@ -77,9 +92,9 @@ const Contact = () => {
                       <h3 className="font-bold text-foreground mb-2">Address</h3>
                       <p className="text-muted-foreground">
                         Mayur College of Pharmacy<br />
-                        Bapuji Education Society Campus<br />
-                        Davangere, Karnataka - 577004<br />
-                        India
+                        Behind Sadhana Building<br />
+                        RT Nagar, Tumkur - 572103<br />
+                        Karnataka, India
                       </p>
                     </div>
                   </div>
@@ -91,9 +106,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold text-foreground mb-2">Phone</h3>
                       <p className="text-muted-foreground">
-                        Office: +91 8192 123456<br />
-                        Admissions: +91 8192 123457<br />
-                        Principal: +91 8192 123458
+                        +91 9480150808
                       </p>
                     </div>
                   </div>
@@ -105,9 +118,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold text-foreground mb-2">Email</h3>
                       <p className="text-muted-foreground">
-                        info@mayurpharmacy.edu.in<br />
-                        admissions@mayurpharmacy.edu.in<br />
-                        principal@mayurpharmacy.edu.in
+                        mcptumkur@gmail.com
                       </p>
                     </div>
                   </div>
@@ -141,7 +152,7 @@ const Contact = () => {
                   <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                   <p className="text-muted-foreground">Interactive Map Will Be Displayed Here</p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Mayur College of Pharmacy, Davangere, Karnataka
+                    Mayur College of Pharmacy, RT Nagar, Tumkur, Karnataka
                   </p>
                 </div>
               </div>

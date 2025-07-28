@@ -1,23 +1,18 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
+import {
+  MapPin,
+  Phone,
+  Mail,
   GraduationCap,
   Facebook,
   Twitter,
   Instagram,
-  Youtube,
-  ArrowUp
+  Youtube
 } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className="bg-accent text-accent-foreground">
@@ -63,7 +58,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="space-y-6">
             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
-            <div className="space-y-3">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-3">
               {[
                 { name: 'About College', href: '/about' },
                 { name: 'D.Pharm Program', href: '/dpharm' },
@@ -77,7 +72,7 @@ const Footer = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block text-accent-foreground/80 hover:text-primary transition-colors"
+                  className="block text-accent-foreground/80 hover:text-primary transition-colors text-sm"
                 >
                   {link.name}
                 </a>
@@ -94,7 +89,8 @@ const Footer = () => {
                 <div>
                   <p className="text-accent-foreground/80 text-sm leading-relaxed">
                     Mayur College of Pharmacy<br />
-                    Bapuji Education Society<br />
+                    Behind Sadhana Building<br />
+                    RT Nagar, Tumkur - 572103<br />
                     Karnataka, India
                   </p>
                 </div>
@@ -103,30 +99,17 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
                 <div>
-                  <p className="text-accent-foreground/80 text-sm">+91-XXXX-XXXXXX</p>
-                  <p className="text-accent-foreground/80 text-sm">+91-XXXX-XXXXXX</p>
+                  <p className="text-accent-foreground/80 text-sm">+91 9480150808</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
                 <div>
-                  <p className="text-accent-foreground/80 text-sm">info@mayurcollege.edu.in</p>
-                  <p className="text-accent-foreground/80 text-sm">admissions@mayurcollege.edu.in</p>
+                  <p className="text-accent-foreground/80 text-sm">mcptumkur@gmail.com</p>
                 </div>
               </div>
             </div>
-
-            {/* Back to Top Button */}
-            <Button
-              onClick={scrollToTop}
-              variant="outline"
-              size="sm"
-              className="w-full mt-6 border-primary text-primary hover:bg-primary hover:text-white"
-            >
-              <ArrowUp className="w-4 h-4 mr-2" />
-              Back to Top
-            </Button>
           </div>
         </div>
       </div>

@@ -35,8 +35,18 @@ const Affiliations = () => {
     <Layout>
       <div className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-teal-600 text-white">
-          <div className="container-custom">
+        <section className="relative py-24 text-white overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="/src/assets/building1.jpg"
+              alt="Affiliations"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80"></div>
+          </div>
+
+          <div className="container-custom relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
